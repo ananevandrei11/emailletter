@@ -7,10 +7,12 @@ const del = require('del');
 const browserSync = require('browser-sync').create();
 // HTML
 const fileinclude = require('gulp-file-include');
+const htmlmin = require('gulp-htmlmin');
 
 //! MODE PRODUCTION START
 function html() {
 	return src('dev/*.html')
+		.pipe(htmlmin({ collapseWhitespace: true }))
 		.pipe(dest('dist'))
 }
 
