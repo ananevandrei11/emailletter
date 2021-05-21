@@ -7,7 +7,11 @@
 	<title>EMAIL LETTER</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<style>
-		
+		@media (max-width: 870px) {
+			.table-1000 {
+				width: 800px;
+			}
+		}
 	</style>
 </head>
 
@@ -15,7 +19,7 @@
 	<table cellpadding="0" cellspacing="0" width="100%" align="center" bgcolor="#ffffff" >
 		<tr>
 			<td>
-				<table class="main-table" cellpadding="0" cellspacing="0" width="1000" align="center" bgcolor="#dfdfdf">
+				<table class="main-table table-1000" cellpadding="0" cellspacing="0" width="1000" align="center" bgcolor="#ffffff">
 					<!--HEADER-->
 					<tr>
 						<td>
@@ -23,7 +27,7 @@
 						</td>
 					</tr>
 					<tr>
-						<td>
+						<td style="background-image: url(https://github.com/ananevandrei11/emailletter/blob/main/src/img/background_top.jpg?raw=true);">
 							@@include('../components/top.html')
 						</td>
 					</tr>
