@@ -7,16 +7,61 @@
 	<title>EMAIL LETTER</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<style>
-		@media (max-width: 870px) {
+		@media screen and (max-width: 525px) {
 			.table-1000 {
-				width: 800px;
+				width: 100% !important;
 			}
+			.header-nav td {
+				display: block !important;
+				width: 100% !important;
+				text-align: center;
+				padding-bottom: 10px;
+			}
+			.header-nav td .user_link {
+				margin-bottom: 10px;
+			}
+			.info-td__main {
+				display: block !important;
+				width: 100% !important;
+				padding-left: 20px !important;
+			}
+			.info-left td {
+				display: block !important;
+				width: 90% !important;
+			}
+			.info-right td {
+				display: block !important;
+				width: 90% !important;
+			}
+			.footer {
+				padding-left: 25px !important;
+				padding-right: 25px !important;
+			}
+			.footer-link {
+				margin-right: 0px !important;
+				margin-bottom: 10px;
+			}
+			.footer-nav .footer-nav_col {
+				display: block !important;
+				width: 100% !important;
+			}
+			.footer-nav .footer-nav_col .footer-nav_table {
+				width: 100% !important;
+			}
+			.footer-nav .footer-nav_col .footer-nav_table td {
+				display: block !important;
+				width: 100% !important;
+			}
+			/* td, span, a {
+				font-size: 100% !important;
+			} */
 		}
+		
 	</style>
 </head>
 
 <body style="margin: 0; padding: 0;">
-	<table cellpadding="0" cellspacing="0" width="100%" align="center" bgcolor="#ffffff" >
+	<table border="0" cellpadding="0" cellspacing="0" width="100%" align="center" bgcolor="#ffffff" >
 		<tr>
 			<td>
 				<table class="main-table table-1000" cellpadding="0" cellspacing="0" width="1000" align="center" bgcolor="#ffffff">
@@ -26,14 +71,16 @@
 							@@include('../components/header.html')
 						</td>
 					</tr>
+					<!--TOP CARD-->
 					<tr>
-						<td style="padding-left:20px; padding-right:20px; background-image: url(https://github.com/ananevandrei11/emailletter/blob/main/src/img/background_top.jpg?raw=true); background-repeat: no-repeat; background-size: contain;">
+						<td style="padding-left:20px; padding-right:20px; background-image: url(https://github.com/ananevandrei11/emailletter/blob/main/src/img/background_top.jpg?raw=true); background-repeat: no-repeat; background-size: cover;">
 							@@include('../components/top.html')
 						</td>
 					</tr>
 					<tr>
 						<td height="22px"></td>
 					</tr>
+					<!--MIDDLE CARD-->
 					<tr>
 						<td style="padding-left:20px; padding-right:20px;">
 							@@include('../components/middle.html')
@@ -42,8 +89,9 @@
 					<tr>
 						<td height="45px"></td>
 					</tr>
+					<!--FOOTER-->
 					<tr>
-						<td bgcolor="#2d3142" style="background-image: url(https://github.com/ananevandrei11/emailletter/blob/main/src/img/background_footer.jpg?raw=true); background-repeat: no-repeat; background-size: 100% 100%">
+						<td bgcolor="#2d3142" style="background-image: url(https://github.com/ananevandrei11/emailletter/blob/main/src/img/background_footer.jpg?raw=true); background-repeat: no-repeat; background-size: cover">
 							@@include('../components/footer.html')
 						</td>
 					</tr>
